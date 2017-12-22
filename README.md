@@ -7,4 +7,4 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
 
   ## Scripts
   
-  + [Create a Managed OS Disk from a specialized VHD file](https://github.com/Azure-Samples/managed-disks-powershell-getting-started/blob/master/CreateManagedDiskFromVHD.ps1)
+  + [Create a Virtual Machine from Azure PowerShell](https://github.com/xdanielribeiro/azurepowershell/blob/master/CreateVirtualMachineFromAzurePowerShell.ps1)
