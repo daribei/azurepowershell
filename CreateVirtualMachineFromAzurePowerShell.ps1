@@ -32,6 +32,9 @@ Login-AzureRmAccount
 #Set the context to the subscription Id where VM will be created
 Select-AzureRmSubscription -SubscriptionId $SubscriptionId
 
+#Create a resource group
+New-AzureRmResourceGroup -Name $resourceGroupName -location $location
+
 #Crete user object
 $credenciais = Get-Credential -Message "Enter a username and password for the VM"
 
