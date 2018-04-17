@@ -4,6 +4,7 @@ This example demonstrates how to create a virtual machine from an image.
 .NOTES
 1. Before you use this sample, please install the latest version of Azure PowerShell from here: http://go.microsoft.com/?linkid=9811175&clcid=0x409
 2. Provide the appropriate values for each variable.
+3. 
 #>
 
 ## Create image from a VHD in a storage account (Unmanaged Disk)
@@ -31,13 +32,11 @@ Save-AzureRmVMImage -ResourceGroupName <resourceGroup> -Name <vmName> `
 $rgName = <resourceGroup>
 $location = "brazilsouth"
 
-
 ## Armazena as configurações da Vnet na variavel $vnet e cria uma interface de rede para a VM
 $vnet = Get-AzureRmVirtualNetwork -Name <vnetName> -ResourceGroupName <resourceGroup>
 $nicName = <nicname>
 $nic = New-AzureRmNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $location `
 -SubnetId $vnet.Subnets[4].Id 
-
 
 ## Define o nome da VM (visível no portal), hostname, tamanho da VM e nome do disco de SO.
 $vmName = <vmName>
@@ -53,16 +52,14 @@ $vm = Set-AzureRmVMOperatingSystem -VM $vm -Windows -ComputerName $computerName 
 $vm = Add-AzureRmVMNetworkInterface -VM $vm -Id $nic.Id
 
 ## Adiciona o disco de SO
-$imageUri = "https://storvmwwebprd03.blob.core.windows.net/system/Microsoft.Compute/Images/image/vmwwebp1vd-osDisk.e3c743f4-19da-478b-b262-516f54c375f9.vhd"
-$osDiskUri = "https://storvmwwebprd03.blob.core.windows.net/vhds/vmwweb04vhd-osDisk.vhd"
+$imageUri = "https://stgName.blob.core.windows.net/system/Microsoft.Compute/Images/vm001-os.vhd"
+$osDiskUri = "https://stgName.blob.core.windows.net/vhds/vm001-osDisk.vhd"
 $vm = Set-AzureRmVMOSDisk -VM $vm -Name $osDiskName -VhdUri $osDiskUri -CreateOption fromImage -SourceImageUri $imageUri -Windows
 
 ## Adiciona o disco de Dados
-$dataImageUri = "https://storvmwwebprd03.blob.core.windows.net/system/Microsoft.Compute/Images/image/vmwwebp1vd-dataDisk-0.e3c743f4-19da-478b-b262-516f54c375f9.vhd"
-$dataDiskUri = "https://storvmwwebprd03.blob.core.windows.net/vhds/vmwweb04vhd-dataDisk.vhd"
+$dataImageUri = "https://stgName.blob.core.windows.net/system/Microsoft.Compute/Images/vvm001-data.vhd"
+$dataDiskUri = "https://stgName.blob.core.windows.net/vhds/vm001-dataDisk.vhd"
 $vm = Add-AzureRmVMDataDisk -VM $vm -Name "dd1" -VhdUri $dataDiskUri -SourceImageUri $dataImageUri -Lun 0 -CreateOption fromImage
 
 # Comando para criar a VM
 New-AzureRmVM -ResourceGroupName $rgName -Location $location -VM $vm -Verbose 
-
-
