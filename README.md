@@ -8,3 +8,5 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
   ## Scripts
   
   + [Create a Virtual Machine from Azure PowerShell](https://github.com/xdanielribeiro/azurepowershell/blob/master/CreateVirtualMachineFromAzurePowerShell.ps1)
+  
+ + [Create a Virtual Machine from an Image (Unmanaged Disk)](hhttps://github.com/xdanielribeiro/azurepowershell/blob/master/CreateVirtualMachineFromAnImage.ps1)
