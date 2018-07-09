@@ -12,4 +12,5 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
   + [Create a Virtual Machine from an Image (Unmanaged Disk)](https://github.com/xdanielribeiro/azurepowershell/blob/master/CreateVirtualMachineFromAnImage(Unmanaged%20Disk).ps1)
   
  + [Convert Azure Managed Disks to Unmanaged using Azure PowerShell](https://github.com/xdanielribeiro/azurepowershell/blob/master/ConvertAzureManagedDiskstoUnmanaged.ps1)
-  
+ 
+  + [Convert Azure managed disks storage from standard to premium, and vice versa](https://github.com/xdanielribeiro/azurepowershell/blob/master/ConvertAzureManagedDiskFromStandardToPremium) 
