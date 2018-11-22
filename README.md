@@ -14,3 +14,7 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
  + [Convert Azure Managed Disks to Unmanaged using Azure PowerShell](https://github.com/xdanielribeiro/azurepowershell/blob/master/ConvertAzureManagedDiskstoUnmanaged.ps1)
  
   + [Convert Azure managed disks storage from standard to premium, and vice versa](https://github.com/xdanielribeiro/azurepowershell/blob/master/ConvertAzureManagedDiskFromStandardToPremium.ps1) 
+  
+    + [Start VM, run a Custom Script Extension and adds this VM to the Azure Load Balancer](https://github.com/xdanielribeiro/azurepowershell/blob/master/StartVMAndRunCustomScriptExtensionAndAddsToAzureLoadBalancer.ps1)
+    
+     + [Stop VM and remove this VM from Azure Load Balancer](https://github.com/xdanielribeiro/azurepowershell/blob/master/StopVMAndRemoveThisVMFromTheAzureLoadBalancer.ps1)
