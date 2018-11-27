@@ -4,7 +4,7 @@ Manjunath Rao
 
 DESCRIPTION:
 This script deletes Azure blobs that are older than X days.
-Provide the Azure Storage Account name, access key and container name as input.
+Provide the Azure Storage Account name, access key, container name and $number_of_days_threshold as input.
 
 #>
 
