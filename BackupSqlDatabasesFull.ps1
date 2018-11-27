@@ -1,6 +1,4 @@
 ﻿<#
-.DESCRIPTION
-This sample demonstrates how to create a Virtual Machine with Azure PowerShell. 
 .NOTES
 1. Before you use this sample, please provide the appropriate values for each variable;
 2. Install SQLServer Module -> Install-Module -Name SQLServer
