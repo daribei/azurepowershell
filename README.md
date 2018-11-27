@@ -18,3 +18,9 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
   + [Start VM, run a Custom Script Extension and adds this VM to the Azure Load Balancer](https://github.com/xdanielribeiro/azurepowershell/blob/master/StartVMAndRunCustomScriptExtensionAndAddsToAzureLoadBalancer.ps1)
     
   + [Stop VM and remove this VM from Azure Load Balancer](https://github.com/xdanielribeiro/azurepowershell/blob/master/StopVMAndRemoveThisVMFromTheAzureLoadBalancer.ps1)
+  
+  + [Backup databases (Full) to the Windows Azure Blob Storage ](https://github.com/xdanielribeiro/azurepowershell/blob/master/BackupSqlDatabasesFull.ps1)
+  
+  + [Backup databases (Log) to the Windows Azure Blob Storage](https://github.com/xdanielribeiro/azurepowershell/blob/master/BackupSqlDatabasesLog.ps1)
+  
+  + [Delete Blob Before Date](https://github.com/xdanielribeiro/azurepowershell/blob/master/DeleteBlobBeforeDate.ps1)
