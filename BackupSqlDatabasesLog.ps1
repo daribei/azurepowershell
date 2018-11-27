@@ -2,7 +2,7 @@
 .NOTES
 1. Before you use this sample, please provide the appropriate values for each variable;
 2. Install SQLServer Module -> Install-Module -Name SQLServer
-3 Create a SQL Server credential -> https://bit.ly/2r6mkfl
+3. Create a SQL Server credential -> https://bit.ly/2r6mkfl
 #>
 
 Import-Module sqlserver -Force
