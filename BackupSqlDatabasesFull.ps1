@@ -1,4 +1,13 @@
-﻿Import-Module sqlserver -Force
+﻿<#
+.DESCRIPTION
+This sample demonstrates how to create a Virtual Machine with Azure PowerShell. 
+.NOTES
+1. Before you use this sample, please provide the appropriate values for each variable;
+2. Install SQLServer Module -> Install-Module -Name SQLServer
+3 Create a SQL Server credential -> https://bit.ly/2r6mkfl
+#>
+
+Import-Module sqlserver -Force
 # set the parameter values  
 $storageAccount = "<stg name>"
 $blobContainer = "<container name>"  
