@@ -24,3 +24,5 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
   + [Backup databases (Log) to the Windows Azure Blob Storage](https://github.com/xdanielribeiro/azurepowershell/blob/master/BackupSqlDatabasesLog.ps1)
   
   + [Delete Blob Before Date](https://github.com/xdanielribeiro/azurepowershell/blob/master/DeleteBlobBeforeDate.ps1)
+  
+  + [Create Azure Storage Account And Get the Storage Key](https://github.com/xdanielribeiro/azurepowershell/blob/master/CreateAzureStorageAccountAndGetStorageKey.ps1)
