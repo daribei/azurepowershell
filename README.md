@@ -28,3 +28,5 @@ Essas scripts demonstram como utilizar o Azure PowerShell para executar/automati
   + [Create Azure Storage Account And Get the Storage Key](https://github.com/xdanielribeiro/azurepowershell/blob/master/CreateAzureStorageAccountAndGetStorageKey.ps1)
   
   + [Export All DNS Zones](https://github.com/xdanielribeiro/azurepowershell/blob/master/ExportAllDNSZones.ps1)
+    
+  + [Export Azure Resources to CSV files with PowerShell](https://github.com/xdanielribeiro/azurepowershell/blob/master/ExportAzResourcesToCSV.ps1)
